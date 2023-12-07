@@ -10,7 +10,7 @@ def createUser(user):
 
     commandsRSA = [
         "cd /etc/openvpn/server/easy-rsa/",
-        f'sudo ./easyrsa --batch --days=3650 build-client-full "{user}" nopass',
+        f'sudo ./easyrsa --batch --days=3650 build-client-full "{user}"',
     ]
 
     processRSA = Popen(
